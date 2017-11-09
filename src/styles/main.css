@@ -44,12 +44,6 @@ body {
 ul.no-list-style, .no-list-style {
   list-style: none; }
 
-.loader-hidden {
-  display: none; }
-
-.loader-active {
-  display: block; }
-
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin: 14px 0;
   font-style: normal;
@@ -117,6 +111,24 @@ small {
 /********************************************
 ****************** ~HOME~ *******************
 ********************************************/
+/********************************************
+***************** ~LOADERS~ *****************
+********************************************/
+.loader-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.loader-hidden {
+  display: none; }
+
+.loader-active {
+  display: block; }
+  .loader-active .loader-inner div {
+    background-color: #970d11; }
+
 /********************************************
 **************** ~BRANDING~ *****************
 ********************************************/

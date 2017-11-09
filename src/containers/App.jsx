@@ -25,18 +25,18 @@ class App extends Component {
     // })
   }
 
-  componentDidMount(){
-    const fetchBoth=(()=>{
-      this.props.onFetchWPpages()
-      this.props.onFetchWPposts()
-    })()
-  }
+  // componentDidMount(){
+  //   const fetchBoth=(()=>{
+  //     this.props.onFetchWPpages()
+  //     this.props.onFetchWPposts()
+  //   })()
+  // }
 
   render() {
     // const {FnState} = this.props
     return (
-      <div className="App">
-        <AppRouter/>
+      <div className="app">
+        <AppRouter {...this.props}/>
       </div>
     )
   }

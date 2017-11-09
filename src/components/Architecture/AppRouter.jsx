@@ -6,12 +6,12 @@ import Home from '../Home'
 import Header from './Header'
 import Footer from './Footer'
 
-export default function AppRouter() {
+export default function AppRouter(props) {
   return (
     <div className='app-router'>
       <Router>
         <div>
-          <Header {...this.props}/>
+          <Header {...props}/>
           <main>
             <Route render={({location,history,match})=>{return(
               <RouteTransition
@@ -22,7 +22,7 @@ export default function AppRouter() {
                   mapStyles={styles=>({opacity:styles.opacity, transform:`translateY(${styles.translateY}px) translateZ(${styles.translateZ})`})}>
                 <Switch key={location.pathname} location={location}>
                   <Route exact path="/" render={()=>{return(
-                      <Home {...this.props}/>
+                      <Home {...props}/>
                     )}}/>
                   <Route render={() => { return <Redirect to="/" /> }} />
                 </Switch>
