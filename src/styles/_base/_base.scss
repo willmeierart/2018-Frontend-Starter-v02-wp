@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: $font-base;
+  font-family: sans-serif;
   font-size: 100%;
 }
 
@@ -27,3 +27,6 @@ ul {
     @extend %no-list-style;
   }
 }
+
+.loader-hidden {display:none;}
+.loader-active {display:block;}

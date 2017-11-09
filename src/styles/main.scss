@@ -19,10 +19,13 @@ CONTENTS:************************************
 ***************** ~IMPORTS~ *****************
 ********************************************/
 @import "~normalize.css/normalize.css";
-@import "base/animations";
-@import "base/base";
-@import "base/colors";
-@import "base/easings";
+@import "~loaders.css/loaders.css";
+@import "_base/animations";
+@import "_base/_base";
+@import "_base/_colors";
+@import "_base/_easings";
+@import "_fonts/_fonts";
+@import "_fonts/_type";
 
 /********************************************
 **************** ~VARIABLES~ ****************

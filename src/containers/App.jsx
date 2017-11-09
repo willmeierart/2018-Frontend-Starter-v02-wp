@@ -4,6 +4,8 @@ import '../styles/main.css'
 
 import {fetchWPpages, fetchWPposts} from '../_actions'
 
+import AppRouter from '../components/Architecture/AppRouter'
+
 class App extends Component {
   constructor(props){
     super(props)

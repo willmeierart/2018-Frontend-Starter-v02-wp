@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Provider} from 'react-redux'
 import {persistStore} from 'redux-persist'
 // import localForage from 'localforage'
-import Loader from 'react-loader' 
+import {Loader} from 'react-loaders'
 
 import Store from './Store'
 import App from '../containers/App'
@@ -18,7 +18,9 @@ export default class AppProvider extends Component {
     )
   }
   render() {
-    if(!this.state.rehydrated){return(<Loader/>)}
+    if(!this.state.rehydrated){ return(
+      <Loader type="line-spin-fade-loader"/>
+    )}
     return (<Provider store={Store}><App/></Provider>)
   }
 }
